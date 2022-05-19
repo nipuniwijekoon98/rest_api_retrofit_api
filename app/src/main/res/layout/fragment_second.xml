@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comments"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/body_content"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@id/body_label"
+        app:layout_constraintTop_toBottomOf="@id/title_content" />
+
+    <TextView
+        android:id="@+id/user_id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="User Id :"
+        app:layout_constraintEnd_toStartOf="@id/user_id_content"
+        app:layout_constraintBottom_toTopOf="@+id/title_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_label" />
+
+    <TextView
+        android:id="@+id/title_label"
+        android:layout_width="36dp"
+        android:layout_height="20dp"
+        android:text="Title :"
+        app:layout_constraintEnd_toStartOf="@id/title_content"
+        app:layout_constraintBottom_toTopOf="@+id/body_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_id_label" />
+
+    <TextView
+        android:id="@+id/user_id_content"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/title_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/user_id_label"
+        app:layout_constraintTop_toBottomOf="@id/id_content" />
+
+    <TextView
+        android:id="@+id/title_content"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/body_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/title_label"
+        app:layout_constraintTop_toBottomOf="@id/user_id_content" />
+
+    <TextView
+        android:id="@+id/body_label"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Body :"
+        app:layout_constraintEnd_toStartOf="@id/body_content"
+        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_label" />
+
+    <TextView
+        android:id="@+id/id_content"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/user_id_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/id_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_label"
+        android:layout_width="56dp"
+        android:layout_height="18dp"
+        android:text="Post Id :"
+        app:layout_constraintEnd_toStartOf="@id/id_content"
+        app:layout_constraintBottom_toTopOf="@+id/user_id_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
